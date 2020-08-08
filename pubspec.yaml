@@ -26,6 +26,7 @@ dependencies:
 
   flutter_staggered_animations: ^0.1.2
   carousel_slider: ^2.2.1
+  carousel_pro: ^0.0.12
 
 
 

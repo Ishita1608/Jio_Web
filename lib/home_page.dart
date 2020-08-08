@@ -11,24 +11,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  int photoIndex = 0;
-
-  List<String> photos = [
-    'h1.jpg',
-    'h2.jpg'
-  ];
-
-  void _previousImage(){
-    setState(() {
-      photoIndex = photoIndex > 0 ? photoIndex -1 : 0;
-    });
-  }
-
-  void _nextImage(){
-    setState(() {
-      photoIndex = photoIndex < photos.length - 1 ? photoIndex + 1 : photoIndex;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +19,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             NavBar(),
-        //    SlideImage(),
+            ImageCarousel(),
         ],
     ),
       ),

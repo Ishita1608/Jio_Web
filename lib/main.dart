@@ -4,6 +4,8 @@ import 'package:jio_web/LandingPage/LandingPage.dart';
 import 'package:jio_web/Navbar/Navbar.dart';
 import 'package:jio_web/home_page.dart';
 
+import 'imagecarousl.dart';
+
 
   void main() => runApp(MyApp());
 
@@ -29,11 +31,12 @@ import 'package:jio_web/home_page.dart';
         width: MediaQuery.of(context).size.width,
        color: Colors.black12,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             //NavBar(),
             Expanded(
               child:
-                HomePage(),
+              ImageCaroulsel()
               ),
 
 

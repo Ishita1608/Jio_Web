@@ -5,6 +5,8 @@ import 'package:jio_web/LandingPage/LandingPage.dart';
 
 import 'package:jio_web/home_page.dart';
 
+import '../imagecarousl.dart';
+
 class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,7 @@ class DesktopNavbar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 70.0,right: 0.0),
             child: FlatButton.icon(onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ImageCaroulsel()));
             }, icon: Icon(Icons.home,color: Colors.white,), label: Text(
               'home'
             )),
