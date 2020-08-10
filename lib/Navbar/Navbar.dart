@@ -40,7 +40,7 @@ class DesktopNavbar extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 70.0,right: 0.0),
+            padding: const EdgeInsets.only(left: 50.0,right: 0.0),
             child: FlatButton.icon(onPressed: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => ImageCaroulsel()));
             }, icon: Icon(Icons.home,color: Colors.white,), label: Text(
@@ -61,78 +61,20 @@ class DesktopNavbar extends StatelessWidget {
               }
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 50.0),
-            child: InkWell(
-              child: Text(
-                'ANALYSIS',
-                style: TextStyle(
-                  color: Colors.white,
+          Flexible(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 50.0),
+              child: InkWell(
+                child: Text(
+                  'ANALYSIS',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Analysis()));
+                },
               ),
-              onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Analysis()));
-              },
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right:50.0),
-            child: InkWell(
-              child: Text(
-                'INTELLIGENCE',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              onTap: (){},
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right:50.0),
-            child: InkWell(
-              child: Text(
-                'PARTNER RESOURCES',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              onTap: (){},
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right:50.0),
-            child: InkWell(
-              child: Text(
-                'VIDEO',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              onTap: (){},
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right:50.0),
-            child: InkWell(
-              child: Text(
-                'EVENTS',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              onTap: (){},
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right:50.0),
-            child: InkWell(
-              child: Text(
-                'MORE',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              onTap: (){},
             ),
           ),
           ],

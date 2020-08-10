@@ -37,7 +37,8 @@ class _ImageCaroulselState extends State<ImageCaroulsel> {
                           child:Row(
                            // crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                             Padding(
+                              Flexible(
+                            child: Padding(
                                padding: const EdgeInsets.all(8.0),
                                child: Container(
                                     height: 200.0,
@@ -45,13 +46,16 @@ class _ImageCaroulselState extends State<ImageCaroulsel> {
                                     child: Image.asset("assets/" + n.Image, fit: BoxFit.cover,)
                                 ),
                              ),
-                          Padding(
-                            padding: const EdgeInsets.only(left:80.0,bottom: 0),
-                            child: Align(
-                              child: Text(n.title,
-                                style: TextStyle(color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 25.0),),
+                              ),
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.only(left:80.0,bottom: 0),
+                              child: Align(
+                                child: Text(n.title,
+                                  style: TextStyle(color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25.0),),
+                              ),
                             ),
                           ),
                             ],
