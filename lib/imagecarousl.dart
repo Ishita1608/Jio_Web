@@ -49,18 +49,28 @@ class _ImageCaroulselState extends State<ImageCaroulsel> {
                               ),
                           Flexible(
                             child: Padding(
-                              padding: const EdgeInsets.only(left:80.0,bottom: 0),
-                              child: Align(
-                                child: Text(n.title,
-                                  style: TextStyle(color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 25.0),),
+                              padding: const EdgeInsets.only(left:10.0,bottom: 0,top: 0),
+                              child: Column(
+                                children: [
+                                  Align(
+                                    child: Text(n.title,
+                                      style: TextStyle(color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20.0
+                                      ),
+                                    ),
+                                    alignment: Alignment.topLeft,
+                                  ),
+                                  Text(n.subt,
+                                    style: TextStyle(color: Colors.black,
+                                        fontSize: 15.0),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                             ],
                           ),
-
                                     )
                                 ),
                       ),
