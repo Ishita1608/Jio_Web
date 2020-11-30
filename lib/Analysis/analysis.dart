@@ -21,7 +21,7 @@ class Analysis extends StatelessWidget {
                 Infographics i = Info.getInfo(index);
                 return AnimationConfiguration.staggeredList(
                   position:index,
-                  duration:const Duration(milliseconds: 1000),
+                  duration:const Duration(milliseconds: 2000),
                   child: SlideAnimation(
                     verticalOffset: 50.0,
                     child:FlipAnimation(

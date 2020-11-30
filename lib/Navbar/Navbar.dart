@@ -21,34 +21,29 @@ class DesktopNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black,
+      height: 50,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left:30.0,
-                right:20.0),
+                right:30.0),
             child: InkWell(
               child: Text(
-                'Jio',
+                'HOME',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30
+
                 //  fontFamily: 'DancingScript',
                 ),
               ),
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => ImageCaroulsel()));
+              },
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 50.0,right: 0.0),
-            child: FlatButton.icon(onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ImageCaroulsel()));
-            }, icon: Icon(Icons.home,color: Colors.white,), label: Text(
-              'home'
-            )),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 50.0),
+            padding: const EdgeInsets.only(right: 30.0),
             child: InkWell(
               child: Text(
                 'NEWS',

@@ -27,7 +27,7 @@ class _ImageCaroulselState extends State<ImageCaroulsel> {
                 Product n = ShowImage.getImage(index);
                 return AnimationConfiguration.staggeredList(
                   position: index,
-                  duration:const Duration(milliseconds: 1000),
+                  duration:const Duration(milliseconds: 2000),
                   child: SlideAnimation(
                     verticalOffset: 50.0,
                     child:FlipAnimation(
