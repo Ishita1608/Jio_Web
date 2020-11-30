@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4330adaf-a41b-42ec-b159-6c0c1e2ad47c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/Analysis/analysis.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Analysis/analysis.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/LandingPage/LandingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/LandingPage/LandingPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Navbar/Navbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Navbar/Navbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/imagecarousl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/imagecarousl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gh-pages" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
