@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "61cc1eeff02b4e1c5e8b0616ee09bb53",
+  "assets/AssetManifest.json": "b135dd812740db2859bd1b8c30ef150a",
 "assets/assets/5g.jpg": "ae286034a14a619b9ae7bacae06e4548",
 "assets/assets/Competition.jpg": "54adb940c4c2bdfb0ca88710b00a6b32",
 "assets/assets/fonts/DancingScript-VariableFont_wght.ttf": "d3bebba97d549436fd6137d05d55ae33",
@@ -24,6 +24,7 @@ const RESOURCES = {
 "assets/assets/Twitter1.png": "eb57b4b5c210decccc8b92d2ec2733aa",
 "assets/assets/Unsure.jpg": "e7012af3fdd45b5c7180f3a6d8aaa74a",
 "assets/assets/Vodafone.jpg": "867c664fac58ab3035271d777faf54f3",
+"assets/assets/w1.webp": "0b117d9a17518ea842ad22594575d29c",
 "assets/assets/Wink-.jpg": "290360c01553662ac55a6ba1e3c95d59",
 "assets/assets/yehh.jpg": "aae7ad416d70ae8c396828f169d002a1",
 "assets/FontManifest.json": "76f544867bebc45f974222da94255a21",
@@ -33,9 +34,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "eba5ceecaafd88124d49a2a77ba9018a",
-"/": "eba5ceecaafd88124d49a2a77ba9018a",
-"main.dart.js": "6e523ff7990d05d3a86befc063e822d4",
+"index.html": "6b8ebf74a680790bf8c905a4063144b8",
+"/": "6b8ebf74a680790bf8c905a4063144b8",
+"main.dart.js": "3e21fcc5b688ff48955ff996af0589a8",
 "manifest.json": "65ac275631cd9625429046391997610f",
 "version.json": "bdacd593782ee93ea7a382c161c06427"
 };
