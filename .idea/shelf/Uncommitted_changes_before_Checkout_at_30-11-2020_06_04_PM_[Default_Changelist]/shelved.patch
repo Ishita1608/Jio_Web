@@ -1,0 +1,18 @@
+Index: lib/Navbar/Navbar.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import 'package:flutter/material.dart';\r\nimport 'package:jio_web/Analysis/analysis.dart';\r\nimport 'package:jio_web/LandingPage/LandingPage.dart';\r\n\r\n\r\nimport 'package:jio_web/home_page.dart';\r\n\r\nimport '../imagecarousl.dart';\r\n\r\nclass NavBar extends StatelessWidget {\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Material(\r\n      child: DesktopNavbar(),\r\n    );\r\n  }\r\n}\r\n\r\nclass DesktopNavbar extends StatelessWidget {\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      color: Colors.black,\r\n      height: 50,\r\n      child: Row(\r\n        mainAxisAlignment: MainAxisAlignment.start,\r\n        children: <Widget>[\r\n          Padding(\r\n            padding: const EdgeInsets.only(left:20.0,\r\n                right:30.0),\r\n            child: InkWell(\r\n              child: Text(\r\n                'HOME',\r\n                style: TextStyle(\r\n                  color: Colors.white,\r\n\r\n                //  fontFamily: 'DancingScript',\r\n                ),\r\n              ),\r\n              onTap: (){\r\n                Navigator.of(context).push(MaterialPageRoute(builder: (context) => ImageCaroulsel()));\r\n              },\r\n            ),\r\n          ),\r\n          Padding(\r\n            padding: const EdgeInsets.only(right: 30.0),\r\n            child: InkWell(\r\n              child: Text(\r\n                'NEWS',\r\n                style: TextStyle(\r\n                  color: Colors.white,\r\n                ),\r\n              ),\r\n              onTap: () {\r\n                Navigator.of(context).push(MaterialPageRoute(builder: (context) => LandingPage()));\r\n              }\r\n            ),\r\n          ),\r\n          Flexible(\r\n            child: Padding(\r\n              padding: const EdgeInsets.only(right: 50.0),\r\n              child: InkWell(\r\n                child: Text(\r\n                  'ANALYSIS',\r\n                  style: TextStyle(\r\n                    color: Colors.white,\r\n                  ),\r\n                ),\r\n                onTap: (){\r\n                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Analysis()));\r\n                },\r\n              ),\r\n            ),\r\n          ),\r\n          ],\r\n      ),\r\n    );\r\n  }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/Navbar/Navbar.dart	(revision 00359c4330183278660339cac06cf1eb3852e984)
++++ lib/Navbar/Navbar.dart	(date 1606739401711)
+@@ -26,7 +26,7 @@
+         mainAxisAlignment: MainAxisAlignment.start,
+         children: <Widget>[
+           Padding(
+-            padding: const EdgeInsets.only(left:20.0,
++            padding: const EdgeInsets.only(left:10.0,
+                 right:30.0),
+             child: InkWell(
+               child: Text(
