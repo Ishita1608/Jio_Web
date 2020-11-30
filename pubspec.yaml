@@ -74,6 +74,7 @@ flutter:
      - assets/h4.jpg
      - assets/h5.jpeg
      - assets/h6.jpg
+     - assets/w1.webp
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

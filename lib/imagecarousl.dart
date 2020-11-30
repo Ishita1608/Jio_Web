@@ -18,69 +18,72 @@ class _ImageCaroulselState extends State<ImageCaroulsel> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black12,
-      child: Column(
-        children: [
-          NavBar(),
-          Expanded(
-            child:  ListView.builder(
-              itemBuilder: (context,index){
-                Product n = ShowImage.getImage(index);
-                return AnimationConfiguration.staggeredList(
-                  position: index,
-                  duration:const Duration(milliseconds: 2000),
-                  child: SlideAnimation(
-                    verticalOffset: 50.0,
-                    child:FlipAnimation(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
-                        child: Card(
-                          child:Row(
-                           // crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Flexible(
-                            child: Padding(
-                               padding: const EdgeInsets.all(8.0),
-                               child: Container(
-                                    height: 200.0,
-                                    width: 600.0,
-                                    child: Image.asset("assets/" + n.Image, fit: BoxFit.cover,)
+      child: Scrollbar(
+        child:
+        Column(
+          children: [
+            NavBar(),
+            Expanded(
+              child:  ListView.builder(
+                itemBuilder: (context,index){
+                  Product n = ShowImage.getImage(index);
+                  return AnimationConfiguration.staggeredList(
+                    position: index,
+                    duration:const Duration(milliseconds: 2000),
+                    child: SlideAnimation(
+                      verticalOffset: 50.0,
+                      child:FlipAnimation(
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
+                          child: Card(
+                            child:Row(
+                             // crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                Flexible(
+                              child: Padding(
+                                 padding: const EdgeInsets.all(8.0),
+                                 child: Container(
+                                      height: 200.0,
+                                      width: 600.0,
+                                      child: Image.asset("assets/" + n.Image, fit: BoxFit.cover,)
+                                  ),
+                               ),
                                 ),
-                             ),
-                              ),
-                          Flexible(
-                            child: Padding(
-                              padding: const EdgeInsets.only(left:10.0,bottom: 0,top: 0),
-                              child: Column(
-                                children: [
-                                  Align(
-                                    child: Text(n.title,
-                                      style: TextStyle(color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20.0
+                            Flexible(
+                              child: Padding(
+                                padding: const EdgeInsets.only(left:10.0,bottom: 0,top: 0),
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      child: Text(n.title,
+                                        style: TextStyle(color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20.0
+                                        ),
                                       ),
+                                      alignment: Alignment.topLeft,
                                     ),
-                                    alignment: Alignment.topLeft,
-                                  ),
-                                  Text(n.subt,
-                                    style: TextStyle(color: Colors.black,
-                                        fontSize: 15.0),
-                                  ),
-                                ],
+                                    Text(n.subt,
+                                      style: TextStyle(color: Colors.black,
+                                          fontSize: 15.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                            ],
-                          ),
-                                    )
-                                ),
-                      ),
+                              ],
                             ),
-                );
-              },
-              itemCount: ShowImage.count,
-            ),
-          )
-        ],
+                                      )
+                                  ),
+                        ),
+                              ),
+                  );
+                },
+                itemCount: ShowImage.count,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

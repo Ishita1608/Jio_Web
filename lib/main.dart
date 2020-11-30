@@ -39,9 +39,6 @@ import 'imagecarousl.dart';
               child:
               ImageCaroulsel()
               ),
-
-
-
           ],
         ),
       ),
